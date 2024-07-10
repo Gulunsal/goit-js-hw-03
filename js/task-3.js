@@ -1,15 +1,14 @@
 // Mission 3 number array filtering
 function filterArray(numbers, value) {
-  const filteredNumbers = []; // Sonuç dizisi
-
-  // numbers dizisini döngü ile kontrol et
+  const filteredNumbers = []; 
+  
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > value) {
-      filteredNumbers.push(numbers[i]); // value'dan büyük sayıları ekle
+      filteredNumbers.push(numbers[i]); 
     }
   }
 
-  return filteredNumbers; // Filtrelenmiş diziyi döndür
+  return filteredNumbers; 
 }
 
 // Test kodları

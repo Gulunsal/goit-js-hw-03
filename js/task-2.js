@@ -1,11 +1,9 @@
 // Mission 2 - Array composition
 function makeArray(firstArray, secondArray, maxLength) {
-  const combinedArray = firstArray.concat(secondArray); // Dizileri birleştir
-  if (combinedArray.length > maxLength) {
-    return combinedArray.slice(0, maxLength); // maxLength değerinde kısalt
+  const combinedArray = firstArray.concat(secondArray); 
+    return combinedArray.slice(0, maxLength);
   }
-  return combinedArray; // Değil ise tüm birleşik diziyi döndür
-}
+  return combinedArray; 
 
 // Test kodları
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]

@@ -1,10 +1,10 @@
-// Mission 1 Slug 
+// Mission 1 Slug fonction
 function slugify(title) {
   return title
-    .toLowerCase() // Tüm karakterleri küçük harfe çevir
-    .trim() // Başındaki ve sonundaki boşlukları kaldır
-    .split(/\s+/) // Boşluklardan ayır
-    .join('-'); // Kelimeleri tire ile birleştir
+    .toLowerCase() 
+    .trim() 
+    .split(/\s+/) 
+    .join('-'); 
 }
 
 // Test kodları
