@@ -1,10 +1,11 @@
 // Mission 2 - Array composition
 function makeArray(firstArray, secondArray, maxLength) {
-  const combinedArray = firstArray.concat(secondArray); 
-    return combinedArray.slice(0, maxLength);
-  }
-   
-
+    let newArray = firstArray.concat(secondArray);
+    if (newArray.length > maxLength) {
+        newArray = newArray.slice(0, maxLength);
+    }
+    return newArray;
+}
 // Test kodları
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
 console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
